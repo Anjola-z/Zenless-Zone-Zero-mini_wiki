@@ -14,12 +14,7 @@ body{
 
 .highlight{
     position: fixed;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    top: 0;
-    border-bottom-right-radius: 10px;
-    border-right: 5px solid #000000;
-    border-bottom: 5px solid #000000;
+    font-size: 20px;
     text-decoration: underline #d7f300;
     color: #ffffff;
     z-index: 4;

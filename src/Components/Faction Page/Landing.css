@@ -1,10 +1,8 @@
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   background-color: #000000;
 }
-
-
 
 /*.bg-text{
   position: fixed;
@@ -37,36 +35,38 @@ body {
   to {
     transform: translate(-20%, -100%);
   }
-} */  
+} */
 
-.header{
+.header {
   position: fixed;
-  top: 0;
-  left: 0;
-  padding-bottom: 10rem;
-  display: flex;
   width: 100%;
-  overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 1), transparent) ;
+  top: 0%;
+  left: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 1) 0%, transparent 100%);
   z-index: 20;
 }
 
-.header h1{
+.headerh1 {
   position: fixed;
   color: #ffffff;
   text-decoration: underline #d7f300;
-  top: 0%;
-  left: 3%;
+  font-size: 3rem;
   animation: slideIn 1s ease;
   z-index: 50;
 }
 
-@keyframes slideIn{
+@keyframes slideIn {
   from {
     opacity: 0;
-    transform:translateX(40px);
+    transform: translateX(40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -97,13 +97,13 @@ body {
   animation: riseUp 0.8s ease forwards;
 }
 
-.faction-card::before{
-    content: "";
-    position: absolute;
-    inset: -5px;
-    background: #080808;
-    filter: blur(200px);
-    opacity: 1;
+.faction-card::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  background: #080808;
+  filter: blur(200px);
+  opacity: 1;
 }
 
 @keyframes riseUp {
@@ -111,27 +111,11 @@ body {
     opacity: 0;
     transform: translateY(40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-.faction-card:nth-child(1) {animation-delay: 0.05s;}
-.faction-card:nth-child(2) {animation-delay: 0.1s;}
-.faction-card:nth-child(3) {animation-delay: 0.15s;}
-.faction-card:nth-child(4) {animation-delay: 0.2s;}
-.faction-card:nth-child(5) {animation-delay: 0.25s;}
-.faction-card:nth-child(6) {animation-delay: 0.3s;}
-.faction-card:nth-child(7) {animation-delay: 0.35s;}
-.faction-card:nth-child(8) {animation-delay: 0.4s;}
-.faction-card:nth-child(9) {animation-delay: 0.45s;}
-.faction-card:nth-child(10) {animation-delay: 0.5s;}
-.faction-card:nth-child(11) {animation-delay: 0.55s;}
-.faction-card:nth-child(12) {animation-delay: 0.6s;}
-.faction-card:nth-child(13) {animation-delay: 0.65s;}
-.faction-card:nth-child(14) {animation-delay: 0.7s;}
-.faction-card:nth-child(15) {animation-delay: 0.75s;}
 
 .faction-card img {
   position: absolute;
@@ -142,23 +126,23 @@ body {
   z-index: 1;
 }
 
-.base{
+.base {
   opacity: 1;
   object-fit: contain;
 }
 
-.hover{
+.hover {
   opacity: 0;
   scale: 1.2;
   object-fit: cover;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   z-index: 2;
 }
 
-.faction-card p{
+.faction-card p {
   font-family: "Poppins", sans-serif;
   font-size: smaller;
   position: absolute;
@@ -172,40 +156,35 @@ body {
   text-align: center;
 }
 
-.faction-card:hover{
+.faction-card:hover {
   outline: 5px solid #d7f300;
 }
 
-.faction-card:hover .base{
+.faction-card:hover .base {
   opacity: 0.4;
 }
 
-.faction-card:hover .hover{
+.faction-card:hover .hover {
   opacity: 1;
   transform: scale(1.1);
 }
 
-.faction-card:hover .overlay{
+.faction-card:hover .overlay {
   inset: 0;
-  background: linear-gradient(
-    to top,
-    #000000,
-    transparent
-  );
+  background: linear-gradient(to top, #000000, transparent);
 }
 
-.faction-card:hover p{
-    color: #d7f300;
-    opacity: 1;
+.faction-card:hover p {
+  color: #d7f300;
+  opacity: 1;
 }
 
-.footer{
+.footer {
   position: absolute;
   left: 0;
-  width: 100%;  
+  width: 100%;
   border-top: 5px solid #d7f300;
   padding-top: 10rem;
   background: #d7f300;
   z-index: 19;
 }
-

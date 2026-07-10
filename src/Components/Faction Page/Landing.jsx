@@ -12,8 +12,7 @@ function Landing() {
         rel="stylesheet"
       ></link>
       <header className="header">
-        <div className="top"></div>
-        <h1>Factions</h1>
+        <h1 className="headerh1">Factions</h1>
       </header>
 
       <div className="grid">

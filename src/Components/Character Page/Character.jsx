@@ -28,17 +28,23 @@ function Character() {
       </header>
       <div className="character-desc">
         <div className="image">
-          <img
-            src={character.image}
-            alt={character.name}
-          />
+          <img src={character.image} alt={character.name} />
         </div>
-        <table>
-            <th>Character Profile</th>
-            <tr>{character.name}</tr>
-            <tr>{character.class}</tr>
-            <tr>{character.attribute.name}</tr>
-            <tr><img src={character.attribute.image} alt={character.attribute.name} /></tr>
+        <table className="char-table">
+          <th>Character Profile</th>
+          <tr>{character.name}</tr>
+          <tr>{character.class}</tr>
+          <tr>
+            {character.attribute.name}
+            <td>
+              <div className="char-table-img">
+                <img
+                  src={character.attribute.image}
+                  alt={character.attribute.name}
+                />
+              </div>
+            </td>
+          </tr>
         </table>
       </div>
     </div>

@@ -44,3 +44,38 @@
     width: 100%;
     height: 100%;
 }
+
+.char-table{
+    margin-top: 10rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+   gap: 0.5rem;
+}
+
+.char-table th{
+    font-size: 2rem;
+}
+
+.char-table tr{
+    padding-left: 0.5rem;
+    width: 100%;
+    height: 2rem;
+    background: linear-gradient(to right,#171717, #000000, #171717);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.char-table-img{
+    width: 100%;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.char-table-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
