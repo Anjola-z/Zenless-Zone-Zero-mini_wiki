@@ -31,7 +31,7 @@ function Character() {
           <img src={character.image} alt={character.name} />
         </div>
         <table className="char-table">
-          <th>Character Profile</th>
+          <th>Character Info</th>
           <tr>{character.name}</tr>
           <tr>{character.class}</tr>
           <tr>

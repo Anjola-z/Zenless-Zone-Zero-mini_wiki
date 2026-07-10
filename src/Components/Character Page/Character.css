@@ -1,3 +1,5 @@
+
+
 .char-head{
     position: fixed;
     width: 100%;
@@ -18,6 +20,18 @@
     text-decoration: underline #d7f300;
     font-size: 50px;
     width: 50%;
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .character-desc{
@@ -29,12 +43,14 @@
     width: 100%;
     height: 80rem;
     gap: 2rem;
+    animation: slideIn 1s ease;
 }
 
 .image{
+    padding-bottom: 1rem;
     position: relative;
     background: linear-gradient(135deg, #000000, #171717);
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 50%;
     height: 70%;
 }
@@ -51,6 +67,9 @@
     display: flex;
     flex-direction: column;
    gap: 0.5rem;
+   animation: slideIn 1s ease;
+   animation-delay: 0.5s;
+   animation-fill-mode: backwards;
 }
 
 .char-table th{
