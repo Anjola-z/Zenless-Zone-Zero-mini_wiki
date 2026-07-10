@@ -162,7 +162,7 @@ const characters = [
     name: "Dialyn",
     image: Dialyn,
     class: "Stun",
-    attribute: { name: "Physica;", image: Physical },
+    attribute: { name: "Physical", image: Physical },
   },
   {
     id: 15,

@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     top: 0%;
-    left: 1%;
+    left: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
 .image{
     padding-bottom: 1rem;
     position: relative;
-    background: linear-gradient(135deg, #000000, #171717);
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 2rem;
     width: 50%;
     height: 70%;
@@ -64,9 +64,17 @@
 .char-table{
     margin-top: 10rem;
     margin-left: 2rem;
+    padding-top: 1rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 1rem;
+    outline: 5px solid #d7f300;
     display: flex;
     flex-direction: column;
+    align-items: center;
    gap: 0.5rem;
+   border-collapse: collapse;
+   background: rgba(0, 0, 0, 1);
    animation: slideIn 1s ease;
    animation-delay: 0.5s;
    animation-fill-mode: backwards;
@@ -78,9 +86,9 @@
 
 .char-table tr{
     padding-left: 0.5rem;
-    width: 100%;
+    width: 12rem;
     height: 2rem;
-    background: linear-gradient(to right,#171717, #000000, #171717);
+    background:  #171717;
     border-radius: 1rem;
     display: flex;
     align-items: center;
